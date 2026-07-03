@@ -174,8 +174,8 @@ img {
 
 .hero-overlay {
   background:
-    linear-gradient(90deg, rgba(29, 78, 216, 0.78) 0%, rgba(37, 99, 235, 0.52) 38%, rgba(37, 99, 235, 0.10) 74%),
-    linear-gradient(0deg, rgba(37, 99, 235, 0.08), rgba(37, 99, 235, 0.08));
+    linear-gradient(90deg, rgba(2, 132, 199, 0.78) 0%, rgba(14, 165, 233, 0.52) 38%, rgba(14, 165, 233, 0.10) 74%),
+    linear-gradient(0deg, rgba(14, 165, 233, 0.06), rgba(14, 165, 233, 0.06));
 }
 
 .hero-content {
@@ -239,7 +239,11 @@ img {
 .button.secondary {
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.66);
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.hero-actions .button.secondary {
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.55);
 }
 
 .button.light {
@@ -305,7 +309,7 @@ img {
 
 .course-card,
 .price-panel,
-.faq-list details {
+.faq-item {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
@@ -515,28 +519,32 @@ td:nth-child(4) {
   gap: 12px;
 }
 
-.faq-list details {
+.faq-item {
   padding: 0 22px;
 }
 
-.faq-list summary {
-  min-height: 62px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+.faq-q {
+  margin: 0;
+  padding: 18px 0 14px;
   color: var(--navy);
   font-weight: 700;
+  border-bottom: 1px solid var(--line);
 }
 
-.faq-list p {
+.faq-a {
   margin: 0;
-  padding: 0 0 22px;
+  padding: 14px 0 22px;
   color: var(--muted);
   font-weight: 650;
 }
 
 .access {
   background: #fff;
+}
+
+.access-note {
+  margin-top: 4px;
+  font-size: 12.5px;
 }
 
 .access-grid {
@@ -835,7 +843,7 @@ td:nth-child(4) {
   }
 
   .hero-overlay {
-    background: linear-gradient(90deg, rgba(29, 78, 216, 0.82) 0%, rgba(37, 99, 235, 0.62) 68%, rgba(37, 99, 235, 0.24) 100%);
+    background: linear-gradient(90deg, rgba(2, 132, 199, 0.82) 0%, rgba(14, 165, 233, 0.62) 68%, rgba(14, 165, 233, 0.24) 100%);
   }
 
   .hero-content {
