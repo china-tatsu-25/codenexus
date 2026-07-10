@@ -21,3 +21,20 @@ nav.addEventListener("click", (event) => {
 
 window.addEventListener("scroll", updateHeader, { passive: true });
 updateHeader();
+
+// 体験申込ボタンのクリック計測（GA4）
+const FORM_TYPES = {
+  "txECyhPidZpDASPv8": "教室",
+  "PtLPhcia77xdy3EHA": "オンライン",
+};
+
+document.querySelectorAll('a[href*="forms.gle"]').forEach((link) => {
+  link.addEventListener("click", () => {
+    if (typeof gtag !== "function") return;
+    const id = Object.keys(FORM_TYPES).find((key) => link.href.includes(key));
+    gtag("event", "trial_form_click", {
+      form_type: id ? FORM_TYPES[id] : "不明",
+      link_text: link.textContent.trim(),
+    });
+  });
+});

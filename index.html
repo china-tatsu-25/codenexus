@@ -3,12 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NYSP56KPV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6NYSP56KPV');
+    </script>
     <title>コードネクサス | 沖縄・那覇のキッズプログラミング教室</title>
     <meta
       name="description"
       content="コードネクサスは沖縄県那覇市のキッズプログラミング教室です。Scratch、マイクラ、AIアプリ開発を少人数制で学べます。無料体験レッスン受付中。"
     />
-    <link rel="icon" href="./assets/code-nexus-icon.png" type="image/png" />
+    <link rel="icon" href="./assets/code-nexus-icon-128.png" type="image/png" />
     <link rel="canonical" href="https://codenexus.jp/" />
     <link rel="stylesheet" href="./styles.css" />
     <script type="application/ld+json">
@@ -18,8 +26,8 @@
         "name": "コードネクサス",
         "alternateName": "CodeNexus",
         "url": "https://codenexus.jp/",
-        "logo": "https://codenexus.jp/assets/code-nexus-icon.png",
-        "image": "https://codenexus.jp/assets/hero-classroom.jpg",
+        "logo": "https://codenexus.jp/assets/code-nexus-icon-128.png",
+        "image": "https://codenexus.jp/assets/hero-classroom.webp",
         "description": "コードネクサスは沖縄県那覇市のキッズプログラミング教室です。Scratch、マイクラ、AIアプリ開発を少人数制で学べます。無料体験レッスン受付中。",
         "address": {
           "@type": "PostalAddress",
@@ -35,11 +43,43 @@
         ]
       }
     </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "マイクラやパソコンが初めてでも参加できますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "はい。初めてのお子様にも取り組みやすく楽しめる内容を用意しております。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "レッスンの振替は可能ですか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "はい。欠席日から2ヶ月以内で振替可能となっております。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "支払い方法を教えてください",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "お支払いはクレジットカードで対応しています。"
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="コードネクサス トップへ">
-        <span class="brand-mark"><img src="./assets/code-nexus-icon.png" alt="" /></span>
+        <span class="brand-mark"><img src="./assets/code-nexus-icon-128.png" alt="" /></span>
         <span>
           <span class="brand-name">コードネクサス</span>
           <span class="brand-sub">キッズプログラミング教室</span>
@@ -55,13 +95,13 @@
         <a href="#pricing">料金</a>
         <a href="#teacher">講師</a>
         <a href="#access">アクセス</a>
-        <a class="nav-cta" href="#contact">無料体験</a>
+        <a class="nav-cta" href="#trial">無料体験</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
-        <img class="hero-image" src="./assets/hero-classroom.jpg" alt="ノートパソコンで作品づくりに取り組む子どもたちと講師" decoding="async" />
+        <img class="hero-image" src="./assets/hero-classroom.webp" width="1600" height="757" alt="ノートパソコンで作品づくりに取り組む子どもたちと講師" decoding="async" />
         <div class="hero-overlay"></div>
         <div class="hero-content">
           <h1 id="hero-title">夢中が<br />未来につながる</h1>
@@ -69,7 +109,7 @@
             マイクラ・AI・Scratchで、子どもたちの「やってみたい！」を形にする少人数制プログラミング教室。
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="https://forms.gle/vFLX1ziu4pLFgxpL7" target="_blank" rel="noreferrer">無料体験を予約する</a>
+            <a class="button primary" href="#trial">無料体験を予約する</a>
             <a class="button secondary" href="#courses">コースを見る</a>
           </div>
         </div>
@@ -165,10 +205,12 @@
               </div>
               <div class="schedule-category">
                 <p class="schedule-cat-label">オンライン</p>
+                <p class="schedule-note">※オンラインは小3以上</p>
                 <div class="schedule-day">
                   <p class="schedule-day-name">火曜</p>
                   <p class="schedule-time">16:00〜17:00</p>
                   <p class="schedule-time">17:15〜18:15</p>
+                  <p class="schedule-time">18:30〜19:30</p>
                 </div>
               </div>
             </div>
@@ -182,10 +224,9 @@
             <p class="section-kicker">Price</p>
             <h2 id="pricing-title">料金</h2>
           </div>
-          <p class="campaign-note">オープンキャンペーン　入会金無料<br>※2026年9月30日まで</p>
+          <p class="campaign-note">オープンキャンペーン中！　入会金 ¥11,000 → <strong>無料</strong><br>※2026年9月30日まで</p>
           <div class="price-notes">
             <span>少人数制</span>
-            <span>入会金 ¥11,000</span>
             <span>兄弟割引または複数コース割あり</span>
           </div>
           <div class="pricing-tables">
@@ -260,13 +301,14 @@
               </div>
             </article>
           </div>
+          <p class="tax-note">※ 表示価格はすべて税込です。</p>
         </div>
       </section>
 
       <section class="section teacher" id="teacher" aria-labelledby="teacher-title">
         <div class="section-inner teacher-grid">
           <div class="teacher-visual">
-            <img class="teacher-photo" src="./assets/teacher-profile.jpg" alt="講師 ちなたつ（知名竜実）のプロフィール写真" loading="lazy" decoding="async" />
+            <img class="teacher-photo" src="./assets/teacher-profile.webp" width="800" height="767" alt="講師 ちなたつ（知名竜実）のプロフィール写真" loading="lazy" decoding="async" />
           </div>
           <div>
             <p class="section-kicker">Teacher</p>
@@ -277,6 +319,68 @@
             <p>
               AIが出てきた今、「やってみたい！」は形にしやすくなりました。プログラミングやAIで「どうやったらできるか」を試行錯誤する力は、大人になっても生きていきます。一緒にアイデアを形にして楽しみましょう！
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="section-kicker">Lesson</p>
+            <h2 id="gallery-title">レッスンの様子</h2>
+          </div>
+          <div class="gallery-grid">
+            <img class="gallery-photo gallery-tall" src="./assets/lesson-01.webp" width="900" height="1200" alt="画面を使ってマイクラプログラミングの内容を説明する講師と、話を聞く子どもたち" loading="lazy" decoding="async" />
+            <img class="gallery-photo" src="./assets/lesson-02.webp" width="1200" height="900" alt="講師に見守られながらパソコンで作品づくりに取り組む子どもたち" loading="lazy" decoding="async" />
+            <img class="gallery-photo" src="./assets/lesson-03.webp" width="1200" height="800" alt="マイクラの画面を見ながら講師と一緒に操作を確認する子ども" loading="lazy" decoding="async" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section voices" id="voices" aria-labelledby="voices-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="section-kicker">Voice</p>
+            <h2 id="voices-title">保護者の声</h2>
+          </div>
+          <div class="voice-grid">
+            <article class="voice-card">
+              <img class="voice-icon" src="./assets/woman_01_color.png" alt="" loading="lazy" decoding="async" />
+              <p>真剣に聞いてて、できたー！ととても楽しそうでした(^^) 次男が初めて、自分で行きたい！と言った体験だったので本人も楽しみにしてました✨ちなたつさんも丁寧に教えてくれて、初めてのパソコンも夢中で操作できてました！また機会があればよろしくお願いします☺️</p>
+            </article>
+            <article class="voice-card">
+              <img class="voice-icon" src="./assets/woman_01_color.png" alt="" loading="lazy" decoding="async" />
+              <p>普段は、分からないことがあったり、慣れてない場所や人がいると緊張して泣くこともありますが、先生に自分から分からないことを聞いたり、教えてもらったらお礼を言ったりしていて、楽しそうに取り組んでました✨連れてきて良かったです☺️</p>
+            </article>
+            <article class="voice-card">
+              <img class="voice-icon" src="./assets/man_02_color.png" alt="" loading="lazy" decoding="async" />
+              <p>マイクラが初めての子供も楽しそうに集中して行えていました。Switchだけでなく、パソコンでやる経験ができて楽しそうでした。ありがとうございました。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section trial" id="trial" aria-labelledby="trial-title">
+        <div class="section-inner">
+          <div class="trial-layout">
+            <img class="trial-calendar" src="./assets/trial-calendar-2026-07.webp" width="840" height="1050" alt="2026年7月の体験スケジュールカレンダー。オンラインは火曜日、教室は水曜日と木曜日に開催" loading="lazy" decoding="async" />
+            <div class="trial-info">
+              <p class="section-kicker">Trial Lesson</p>
+              <h2 id="trial-title">体験レッスンについて</h2>
+              <p class="trial-lead">
+                体験レッスンは共通でマイクラを使ったプログラミング体験を行います。<br />
+                体験の後にお子さまに合ったコースを一緒にご相談できます。
+              </p>
+              <div class="trial-meta">
+                <span>所要時間60分</span>
+                <span>保護者見学OK</span>
+                <span>持ち物不要</span>
+              </div>
+              <div class="trial-cta">
+                <a class="button primary" href="https://forms.gle/txECyhPidZpDASPv8" target="_blank" rel="noreferrer">教室で体験する</a>
+                <a class="button primary" href="https://forms.gle/PtLPhcia77xdy3EHA" target="_blank" rel="noreferrer">オンラインで体験する</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -297,8 +401,8 @@
               <p class="faq-a">はい。欠席日から2ヶ月以内で振替可能となっております。</p>
             </div>
             <div class="faq-item">
-              <p class="faq-q">3つのコースの中でどれを選んだら良いですか？</p>
-              <p class="faq-a">まずはスタンダードコースでの体験がオススメです。体験を見た上でどのコースが合っているかご相談します。</p>
+              <p class="faq-q">支払い方法を教えてください</p>
+              <p class="faq-a">お支払いはクレジットカードで対応しています。</p>
             </div>
           </div>
         </div>
@@ -318,7 +422,7 @@
             </ul>
           </div>
           <div class="map-card">
-            <img src="./assets/sharedoffice02.jpg" alt="キスミットドア開南の教室スペース" loading="lazy" decoding="async" />
+            <img src="./assets/sharedoffice02.webp" width="900" height="600" alt="キスミットドア開南の教室スペース" loading="lazy" decoding="async" />
             <div class="map-card-info" aria-label="アクセス情報">
               <span>コードネクサス</span>
               <a href="https://maps.app.goo.gl/qcj1rkjWFztrfqf37" target="_blank" rel="noreferrer">Googleマップで見る</a>
@@ -333,7 +437,8 @@
           <h2 id="contact-title">無料体験レッスン受付中</h2>
           <p>Googleフォームから体験お申込みください。ご質問はメールやLINEにお問い合わせください。</p>
           <div class="contact-actions">
-            <a class="button primary" href="https://forms.gle/vFLX1ziu4pLFgxpL7" target="_blank" rel="noreferrer">体験レッスンを申し込む</a>
+            <a class="button primary" href="https://forms.gle/txECyhPidZpDASPv8" target="_blank" rel="noreferrer">教室で体験する</a>
+            <a class="button primary" href="https://forms.gle/PtLPhcia77xdy3EHA" target="_blank" rel="noreferrer">オンラインで体験する</a>
             <a class="button secondary light" href="mailto:ennexus.c@gmail.com">メールでお問い合わせ</a>
             <a class="button secondary light" href="https://lin.ee/ylZwi2s" target="_blank" rel="noreferrer">LINEでお問い合わせ</a>
           </div>
@@ -353,6 +458,13 @@
           <span>コードネクサス</span>
         </a>
       </div>
+      <div class="footer-links">
+        <a href="./tokushoho.html">特定商取引法に基づく表記</a>
+        <a href="./privacy.html">プライバシーポリシー</a>
+      </div>
+      <p class="footer-legal">
+        本製品はMinecraft®公式製品ではありません。Mojang社から承認されておらず、Mojang社およびNotch氏とは関係ありません。本製品に関する内容に関して、Mojang社へお問合せされませんよう、お願い致します。
+      </p>
     </footer>
 
     <script src="./script.js"></script>
